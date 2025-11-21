@@ -101,7 +101,56 @@ plt.ylabel('Point Differential')
 plt.show()
 # the correlation value makes sense,the scatter plot shows positive trend, games with higher win probabilities tend to result in larger point margins. The upwars pattern in the plot matches the positive correlation value (1.37)
 
+#OUTPUT:
+  #         game_id  year_id  fran_id  ... game_result  forecast  point_diff
+#21717  200910270CLE     2010  Celtics  ...           W  0.277472           6
+#21718  200910280BOS     2010  Celtics  ...           W  0.814619          33
+#21719  200910280MIA     2010   Knicks  ...           L  0.258755         -22
+#21720  200910280MIN     2010     Nets  ...           L  0.475155          -2
+#21721  200910280OKC     2010  Thunder  ...           W  0.716764          13
 
+#[5 rows x 11 columns]
+ #           game_id  year_id  fran_id  ... game_result  forecast  point_diff
+#23468  201310300CLE     2014     Nets  ...           L  0.611981          -4
+#23469  201310300NYK     2014   Knicks  ...           W  0.793150           7
+#23470  201310300SAS     2014    Spurs  ...           W  0.692980           7
+#23471  201310300TOR     2014  Celtics  ...           L  0.361233          -6
+#23472  201310300UTA     2014  Thunder  ...           W  0.526056           3
+
+#[5 rows x 11 columns]
+#Difference between the two teams average points scored:
+#9.731707317073173
+
+
+#Difference between the two teams average points scored in 2014 is :
+#0.44706798131809933
+
+
+#This table shows if teams tend to win more games at home compared to away.
+#game_location    A    H
+#game_result            
+#L              133  105
+#W               92  120
+
+
+#Table of proportions:
+#game_location         A         H
+#game_result                      
+#L              0.295556  0.233333
+#W              0.204444  0.266667
+
+
+#Expected contingency table:
+#[[119. 119.]
+# [106. 106.]]
+
+
+#Chi-Square statistic: 6.501704455367053
+
+
+#The covariance between forecast and point_diff is:
+#[[  0.05   1.37]
+# [  1.37 186.56]]
 
 
 
