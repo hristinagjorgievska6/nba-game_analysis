@@ -23,4 +23,6 @@ The project analysis answers the following questions:
 
 4. Are forecast win probabilities related to point differential?
    - Covariance = +1.37, as forecast rise, point differential tends to rise. 
-   
+
+
+
